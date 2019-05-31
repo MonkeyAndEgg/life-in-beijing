@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-redux/store": "^9.0.0",
     "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.3",
     "@angular/compiler": "^6.0.3",
@@ -21,7 +22,11 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "adm-zip": "^0.4.13",
+    "ajv": "^6.10.0",
     "core-js": "^2.5.4",
+    "primeicons": "^1.0.0",
+    "primeng": "^6.1.7",
+    "redux": "^4.0.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

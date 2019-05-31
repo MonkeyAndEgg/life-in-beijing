@@ -7,6 +7,8 @@ import { USER_STATUS } from 'src/app/constants/game-constants';
   styleUrls: ['./status.component.css']
 })
 export class StatusComponent implements OnInit {
+  
+  
   USER_STATUS = USER_STATUS;
 
   private cash = 2000;

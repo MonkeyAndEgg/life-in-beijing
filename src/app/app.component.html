@@ -1,4 +1,18 @@
 <app-welcome *ngIf='!gameOpen'
   (enterGameEmitter)="startGame()">
 </app-welcome>
-<app-game *ngIf='gameOpen'></app-game>
+<app-game 
+  *ngIf='gameOpen'
+  (displayDialogEmitter)="toggleDialog()">
+</app-game>
+
+<p-dialog header="买卖" [styleClass]="app-dialog" [(visible)]="displayDialog">
+  <div class="content">
+    <h3>Input: {{val2}}</h3>
+    <input type="text" pInputText [(ngModel)]="val2" style="width:14em"/>
+    <p-slider [(ngModel)]="val2" [style]="{'width':'14em'}"></p-slider>
+  </div> 
+  <div class="footer">
+    <button >{{SUBMIT}}</button>
+  </div>
+</p-dialog>

@@ -1,3 +1,20 @@
-<p>
-  trade works!
-</p>
+<div class='trade'>
+  <div class='app-border market'>
+    <table>
+      <tr *ngFor='let item of sellingItems' (click)='purchase(item)'>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class='app-border repo'>
+      <table>
+        <tr *ngFor='let item of userItems' (click)='sell(item)'>
+          <td>{{item.name}}</td>
+          <td>{{item.price}}</td>
+        </tr>
+      </table>
+  </div>
+</div>
+

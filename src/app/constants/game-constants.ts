@@ -9,7 +9,8 @@ export const USER_STATUS = {
 };
 
 // trade constants
-
+export const BLACK_MARKET = '黑市';
+export const HOME = '您的出租屋';
 
 // route-map constants
 
